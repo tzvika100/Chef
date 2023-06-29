@@ -1,7 +1,7 @@
 {
   "name": "s3",
   "run_list": [
-    "recipe[python]"
+    "recipe[python]",
     "recipe[app]"
   ]
 }
