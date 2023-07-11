@@ -1,7 +1,14 @@
 {
-  "name": "s3",
+  "name": "app",
+  "override_attributes": {
+    "s3": {
+    "version": "1.0"
+  }
+  },
   "run_list": [
     "recipe[python]",
-    "recipe[app]"
+    "recipe[s3]",
+    "recipe[python]",
+    "recipe[cron]"
   ]
 }
