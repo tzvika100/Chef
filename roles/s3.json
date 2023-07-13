@@ -2,8 +2,8 @@
   "name": "app",
   "override_attributes": {
     "s3": {
-    "version": "1.0"
-  }
+      "version": "1.0.9"
+    }
   },
   "run_list": [
     "recipe[python]",
