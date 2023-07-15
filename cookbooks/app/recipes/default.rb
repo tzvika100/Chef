@@ -6,7 +6,7 @@
 
  execute "run-flask-apk"  do
  	command 'nohup python3 app.py > /dev/null 2>&1 &'
- 	cwd '/home/ubuntu/Weather_APK/'
+ 	cwd '/home/ubuntu/app/'
  	user 'root'
  	action :run
  end
