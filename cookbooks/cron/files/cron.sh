@@ -1,5 +1,6 @@
 #! /bin/bash
 sudo su
-git clone https://github.com/tzvika100/chef.git
-#cd chef
-chef-solo -c chef/solo.rb -j chef/runlist.json --chef-license=accept
+cd /home/ubuntu/chef
+git pull origin main
+sudo chef-solo -c /home/ubuntu/chef/solo.rb -j /home/ubuntu/chef/runlist.json --chef-license=accept
+
