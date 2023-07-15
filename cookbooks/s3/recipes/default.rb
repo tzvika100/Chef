@@ -22,8 +22,8 @@ end
 remote_file_s3 '/home/tzvi/app/apk' do
 	bucket 'my-storage-apk'
         remote_path 'app/'
-        aws_access_key_id 'xxxxxxxxxxxxxxxxxxxxxxxx'
-        aws_secret_access_key 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        aws_access_key_id 'AKIAWYQUEW3AR3ZX2X2G'
+        aws_secret_access_key '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'
         region 'us-west-2'
         action :create
 end
