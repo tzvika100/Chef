@@ -19,7 +19,7 @@ if Dir.exist?('/home/ubuntu/app')
 
 end
 
-remote_file_s3 '/home/tzvi/app/apk' do
+remote_file_s3 '/home/ubuntu/app/apk' do
 	bucket 'my-storage-apk'
         remote_path 'app/'
         aws_access_key_id 'AKIAWYQUEW3AR3ZX2X2G'
