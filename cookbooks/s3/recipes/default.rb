@@ -20,7 +20,7 @@ if Dir.exist?('/home/ubuntu/app')
   	end
 end
 
-remote_file_s3 '/home/ubuntu/app/#{version}.tar' do
+remote_file_s3 "/home/ubuntu/app/#{version}.tar" do
 	bucket 'my-storage-apk'
         remote_path 'app/#{version}.tar'
         aws_access_key_id 'AKIAWYQUEW3AR3ZX2X2G'
