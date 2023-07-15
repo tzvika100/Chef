@@ -23,8 +23,8 @@ end
 remote_file_s3 "/home/ubuntu/app/#{version}.tar" do
 	bucket 'my-storage-apk'
         remote_path "app/#{version}.tar"
-        aws_access_key_id 'AKIAWYQUEW3AR3ZX2X2G'
-        aws_secret_access_key '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'
+      #  aws_access_key_id 'xxxxxx'
+      #  aws_secret_access_key 'xxxxxxxxxxxx'
         region 'us-west-2'
         action :create
 end
