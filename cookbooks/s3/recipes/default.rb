@@ -20,7 +20,7 @@ if Dir.exist?('/home/ubuntu/app')
   	end
 end
 
-remote_file_s3 '/home/ubuntu/app/apk' do
+remote_file_s3 '/home/ubuntu/app/#{version}.tar' do
 	bucket 'my-storage-apk'
         remote_path 'app/#{version}.tar'
         aws_access_key_id 'AKIAWYQUEW3AR3ZX2X2G'
@@ -30,7 +30,7 @@ remote_file_s3 '/home/ubuntu/app/apk' do
 end
 
 execute 'extract_artifact' do
-  command "tar -xf /home/tzvi/app/app-#{version}.tar "
+  command "tar -xf /home/tzvi/app/#{version}.tar "
   action :run
 end
 
